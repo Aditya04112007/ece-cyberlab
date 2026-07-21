@@ -1,0 +1,89 @@
+.pcb-background{
+
+position:absolute;
+
+inset:0;
+
+overflow:hidden;
+
+z-index:0;
+
+pointer-events:none;
+
+background:#050816;
+
+}
+
+/* Cyan Glow */
+
+.pcb-glow{
+
+position:absolute;
+
+width:900px;
+
+height:900px;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+background:radial-gradient(circle,
+rgba(0,229,255,.08),
+transparent 70%);
+
+}
+
+/* CAD Grid */
+
+.pcb-grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(0,229,255,.04) 1px,transparent 1px),
+
+linear-gradient(90deg,rgba(0,229,255,.04) 1px,transparent 1px);
+
+background-size:60px 60px;
+
+opacity:.5;
+
+}
+
+/* SVG */
+
+.pcb-traces{
+
+width:100%;
+
+height:100%;
+
+position:absolute;
+
+}
+
+/* PCB Copper Traces */
+
+.trace{
+
+fill:none;
+
+stroke:#00E5FF;
+
+stroke-width:3;
+
+opacity:.25;
+
+stroke-linecap:round;
+
+stroke-linejoin:round;
+
+filter:drop-shadow(0 0 6px rgba(0,229,255,.3));
+
+}

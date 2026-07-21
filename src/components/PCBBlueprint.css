@@ -1,0 +1,65 @@
+.pcb-bg{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    z-index:0;
+    pointer-events:none;
+}
+
+.pcb-svg{
+    width:100%;
+    height:100%;
+}
+
+.trace{
+    stroke:#00E5FF;
+    stroke-width:3;
+    opacity:.18;
+    fill:none;
+}
+
+.pad{
+    fill:#00E5FF;
+    opacity:.75;
+}
+
+.chip{
+    fill:rgba(5,20,35,.55);
+    stroke:#00E5FF;
+    stroke-width:2;
+    opacity:.35;
+}
+/* Animated Electric Current */
+
+.signal{
+    fill:none;
+    stroke:#00E5FF;
+    stroke-width:4;
+    stroke-linecap:round;
+
+    stroke-dasharray:18 900;
+
+    animation:flow 4s linear infinite;
+
+    filter:drop-shadow(0 0 10px #00E5FF);
+}
+
+.signal.delay1{
+    animation-delay:1s;
+}
+
+.signal.delay2{
+    animation-delay:2s;
+}
+
+@keyframes flow{
+
+0%{
+stroke-dashoffset:920;
+}
+
+100%{
+stroke-dashoffset:0;
+}
+
+}
