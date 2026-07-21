@@ -1,6 +1,6 @@
 .skills{
     min-height:100vh;
-    padding:100px;
+    padding:100px 60px;
     background:#050816;
     text-align:center;
 }
@@ -18,8 +18,10 @@
 
 .skills-grid{
 
-    display:grid;
+    max-width:1200px;
+    margin:0 auto;
 
+    display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
     gap:30px;
@@ -56,4 +58,34 @@
     border-color:#00E5FF;
 
     box-shadow:0 0 25px rgba(0,229,255,.35);
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.skills{
+
+padding:70px 20px !important;
+
+}
+
+.skills-grid{
+
+width:100%;
+
+max-width:100%;
+
+margin:0 auto;
+
+grid-template-columns:1fr;
+
+}
+
+.skill-card{
+
+width:100%;
+
+}
+
 }
