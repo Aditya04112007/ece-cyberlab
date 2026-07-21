@@ -25,6 +25,7 @@ function App() {
       <Projects />
 
       <Contact />
+      <Footer />
     </>
   );
 }

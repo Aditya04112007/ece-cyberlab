@@ -1,31 +1,34 @@
 import { useEffect, useState } from "react";
 
 function ScrollProgress() {
-  const [scroll, setScroll] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const updateScroll = () => {
-      const totalHeight =
+    function handleScroll() {
+      const winScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
+
+      const height =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
 
-      const progress =
-        (window.scrollY / totalHeight) * 100;
+      const scrolled = (winScroll / height) * 100;
 
-      setScroll(progress);
-    };
+      setProgress(scrolled);
+    }
 
-    window.addEventListener("scroll", updateScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () =>
-      window.removeEventListener("scroll", updateScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
       className="scroll-progress"
-      style={{ width: `${scroll}%` }}
-    ></div>
+      style={{ width: `${progress}%` }}
+    />
   );
 }
 

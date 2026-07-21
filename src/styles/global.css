@@ -29,26 +29,25 @@ html{
     scroll-behavior:smooth;
 }
 .scroll-progress{
+    position: fixed;
+    top: 0;
+    left: 0;
 
-    position:fixed;
+    width: 0;
+    height: 4px;
 
-    top:0;
+    background: #00E5FF;
 
-    left:0;
+    z-index: 999999;
 
-    height:4px;
-
-    background:#00E5FF;
-
-    z-index:9999;
-
-    transition:width .1s linear;
+    pointer-events: none;
 
     box-shadow:
-        0 0 8px #00E5FF,
-        0 0 18px #00E5FF,
-        0 0 30px #00E5FF;
+        0 0 10px #00E5FF,
+        0 0 20px #00E5FF,
+        0 0 35px #00E5FF;
 
+    transition: width 0.1s linear;
 }
 html,
 body{
