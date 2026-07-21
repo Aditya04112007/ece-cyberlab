@@ -157,3 +157,89 @@
     border-color:#00E5FF;
 
 }
+/* ===========================
+   ABOUT MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.about{
+
+flex-direction:column;
+
+padding:80px 20px;
+
+gap:40px;
+
+text-align:center;
+
+}
+
+.about-left,
+.about-right{
+
+width:100%;
+
+}
+
+.profile-card{
+
+width:240px;
+
+height:240px;
+
+margin:auto;
+
+}
+
+.profile-card::before{
+
+width:250px;
+
+height:250px;
+
+}
+
+.profile-card::after{
+
+width:225px;
+
+height:225px;
+
+}
+
+.profile-image{
+
+width:210px;
+
+height:210px;
+
+}
+
+.about h2{
+
+font-size:34px;
+
+}
+
+.about p{
+
+font-size:16px;
+
+}
+
+.about-stats{
+
+justify-content:center;
+
+}
+
+.stat{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+}
