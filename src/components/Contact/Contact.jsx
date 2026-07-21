@@ -90,7 +90,7 @@ function Contact() {
   </a>
 
   <a
-    href="YOUR_LINKEDIN_URL"
+    href="https://www.linkedin.com/in/aditya-katare-457731393?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     target="_blank"
     rel="noreferrer"
     title="LinkedIn"
@@ -99,7 +99,7 @@ function Contact() {
   </a>
 
   <a
-    href="YOUR_GITHUB_URL"
+    href="https://github.com/Aditya04112007"
     target="_blank"
     rel="noreferrer"
     title="GitHub"
@@ -108,7 +108,7 @@ function Contact() {
   </a>
 
   <a
-    href="YOUR_INSTAGRAM_URL"
+    href="https://www.instagram.com/adi_katare_/?hl=en"
     target="_blank"
     rel="noreferrer"
     title="Instagram"
@@ -117,7 +117,7 @@ function Contact() {
   </a>
 
   <a
-    href="YOUR_SNAPCHAT_URL"
+    href="https://www.snapchat.com/add/adi_katare?share_id=g88vjiINSYo&locale=en-GB"
     target="_blank"
     rel="noreferrer"
     title="Snapchat"
